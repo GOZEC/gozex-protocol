@@ -1,0 +1,72 @@
+/*
+  TOKENS: the only file in this project that may hold colour literals.
+  Provenance: k-means (k=10, seed 7, kmeans++ init) over pixels of
+  reference/SAMPUL GOZEC JPG.jpg.jpeg and reference/GOZEC 1.jpg.jpeg;
+  every centroid snapped to the nearest REAL pixel (file @ x,y below).
+  ink, silver and bone come from the opaque pixels of the logo PNG.
+   bg      #041e4d  reference/GOZEC 1.jpg.jpeg @ (309,38)
+   navy    #073069  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (88,39)
+   indigo  #374170  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (744,147)
+   plum    #6c5c7c  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (890,53)
+   rose    #ad868b  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (1093,413)
+   orange  #da8767  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (818,421)
+   amber   #f7b974  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (1252,64)
+   cream   #fae49a  reference/SAMPUL GOZEC JPG.jpg.jpeg @ (1216,194)
+   snow    #f2ede5  reference/GOZEC 1.jpg.jpeg @ (637,305)
+   ink     #080808  brand/LOGO GOZEC PNG...png @ (998,462)
+   silver  #c8c8c8  brand/LOGO GOZEC PNG...png @ (849,542)
+   bone    #f0f0f0  brand/LOGO GOZEC PNG...png @ (1145,439)
+  Nothing here is invented; tools/prep.py regenerates this block.
+*/
+:root {
+  color-scheme: dark;
+  --c-bg: #041e4d;
+  --c-navy: #073069;
+  --c-indigo: #374170;
+  --c-plum: #6c5c7c;
+  --c-rose: #ad868b;
+  --c-orange: #da8767;
+  --c-amber: #f7b974;
+  --c-cream: #fae49a;
+  --c-snow: #f2ede5;
+  --c-ink: #080808;
+  --c-silver: #c8c8c8;
+  --c-bone: #f0f0f0;
+
+  --bg: var(--c-bg);
+  --bg-2: var(--c-navy);
+  --fg: var(--c-snow);
+  --strong: var(--c-bone);
+  --muted: color-mix(in srgb, var(--fg) 72%, var(--bg));
+  --dim: color-mix(in srgb, var(--fg) 58%, var(--bg));
+  --faint: color-mix(in srgb, var(--fg) 40%, var(--bg));
+  --line: color-mix(in srgb, var(--fg) 16%, transparent);
+  --hair: color-mix(in srgb, var(--fg) 10%, transparent);
+  --edge: color-mix(in srgb, var(--fg) 26%, transparent);
+  --edge-hi: color-mix(in srgb, var(--fg) 44%, transparent);
+  --frost: color-mix(in srgb, var(--bg) 46%, transparent);
+  --frost-hi: color-mix(in srgb, var(--fg) 8%, transparent);
+  --glass: color-mix(in srgb, var(--bg) 66%, transparent);
+  --glass-edge: color-mix(in srgb, var(--fg) 18%, transparent);
+  --card: color-mix(in srgb, var(--bg-2) 52%, transparent);
+  --shadow: color-mix(in srgb, var(--c-ink) 38%, transparent);
+  --accent: var(--c-orange);
+  --accent-2: var(--c-amber);
+  --accent-3: var(--c-cream);
+  --press: var(--c-silver);
+  --up: var(--c-cream);
+  --down: var(--c-rose);
+  --err: var(--c-rose);
+  --focus: var(--c-amber);
+  --spot: color-mix(in srgb, var(--c-amber) 20%, transparent);
+
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-soft: cubic-bezier(.2, .65, .2, 1);
+  --t-fast: .2s;
+  --t-mid: .25s;
+  --t-slow: .85s;
+
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

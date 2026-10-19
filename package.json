@@ -1,0 +1,21 @@
+{
+  "name": "gozec",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gozec marketing site, static output in dist/",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "measure": "node scripts/measure.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@primer/octicons": "^19.40.0",
+    "jpeg-js": "^0.4.4",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^25.14.0"
+  }
+}

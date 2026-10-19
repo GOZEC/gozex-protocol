@@ -1,0 +1,74 @@
+{
+ "bg": {
+  "hex": "#041e4d",
+  "file": "reference/GOZEC 1.jpg.jpeg",
+  "x": 309,
+  "y": 38
+ },
+ "navy": {
+  "hex": "#073069",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 88,
+  "y": 39
+ },
+ "indigo": {
+  "hex": "#374170",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 744,
+  "y": 147
+ },
+ "plum": {
+  "hex": "#6c5c7c",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 890,
+  "y": 53
+ },
+ "rose": {
+  "hex": "#ad868b",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 1093,
+  "y": 413
+ },
+ "orange": {
+  "hex": "#da8767",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 818,
+  "y": 421
+ },
+ "amber": {
+  "hex": "#f7b974",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 1252,
+  "y": 64
+ },
+ "cream": {
+  "hex": "#fae49a",
+  "file": "reference/SAMPUL GOZEC JPG.jpg.jpeg",
+  "x": 1216,
+  "y": 194
+ },
+ "snow": {
+  "hex": "#f2ede5",
+  "file": "reference/GOZEC 1.jpg.jpeg",
+  "x": 637,
+  "y": 305
+ },
+ "ink": {
+  "hex": "#080808",
+  "file": "brand/LOGO GOZEC PNG...png",
+  "x": 998,
+  "y": 462
+ },
+ "silver": {
+  "hex": "#c8c8c8",
+  "file": "brand/LOGO GOZEC PNG...png",
+  "x": 849,
+  "y": 542
+ },
+ "bone": {
+  "hex": "#f0f0f0",
+  "file": "brand/LOGO GOZEC PNG...png",
+  "x": 1145,
+  "y": 439
+ }
+}

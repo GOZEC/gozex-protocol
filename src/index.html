@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self'; connect-src https://api.dexscreener.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="{{THEME_COLOR}}">
+<meta name="color-scheme" content="dark">
+<title>Gozec: All around. Out of sight.</title>
+<meta name="description" content="Gozec is a Solana project built on discretion. Your activity stays yours while the open market keeps moving in the light.">
+<link rel="canonical" href="https://gozec.pro/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gozec">
+<meta property="og:title" content="Gozec: All around. Out of sight.">
+<meta property="og:description" content="A Solana project built on discretion, with a live board of the busiest tokens on the chain.">
+<meta property="og:url" content="https://gozec.pro/">
+<meta property="og:image" content="https://gozec.pro/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="font" type="font/woff2" href="fonts/dm-sans-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/dm-sans-latin-600-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-ghost.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script type="application/json" id="register-data">{{REGISTER_JSON}}</script>
+<script src="js/boot.js"></script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="world" aria-hidden="true">
+  <div class="world-glow" data-depth="0.04"></div>
+  <div class="mesh" data-depth="0.08"><i></i><i></i><i></i></div>
+  <div class="world-wash"></div>
+</div>
+<p class="sr-only" id="live" role="status" aria-live="polite"></p>
+
+<header class="site-header">
+  <a class="wordmark" href="#top" aria-label="Gozec, back to top"><img src="img/logo-192.webp" width="40" height="40" alt=""><span>Gozec<b>.</b></span></a>
+  <nav class="site-nav" aria-label="Sections">
+    <a href="#angles">Angles</a>
+    <a href="#market">Board</a>
+    <a href="#workspace" data-tab="path">Path</a>
+    <a href="#workspace" data-tab="facts">Facts</a>
+  </nav>
+  <div class="header-end">
+{{SOCIALS}}
+  </div>
+</header>
+
+<main id="top">
+{{CA_SLOT}}
+
+<section class="stage" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <a class="pulse" href="#market" data-spot>
+      <span class="pulse-tag">LIVE</span>
+      <span class="pulse-body"><b>Solana's loudest tokens, ranked below.</b><span>Ten rows, one source, a fresh pull every minute you stay.</span></span>
+      <span class="card-arrow" aria-hidden="true">↗</span>
+    </a>
+    <div class="landing-intro">
+      <p class="eyebrow">PRIVACY AS A DEFAULT</p>
+      <h1 id="hero-title"><span class="h1-a">All around.</span> <span class="h1-b">Out of sight.</span></h1>
+      <p class="lede">Gozec puts discretion first across the Solana chain. What you do stays yours, while the open market keeps moving in the light.</p>
+      <a class="enter-link" href="#market">Watch the board <span aria-hidden="true">↗</span></a>
+      <div class="hero-pills">
+{{HERO_PILLS}}
+      </div>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="halo" data-depth="0.05"></div>
+    <svg class="rings" data-depth="0.09" viewBox="0 0 400 400" fill="none"><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="190"/></svg>
+    <img class="ghost" data-depth="0.14" src="img/hero-ghost.webp" width="720" height="860" alt="" decoding="async">
+  </div>
+</section>
+
+<section class="launchpad" id="angles" aria-labelledby="angles-title">
+  <div class="launcher-heading reveal"><h2 id="angles-title" class="eyebrow-h">TWELVE ANGLES, ONE IDEA</h2><span class="launcher-hint">Pick a card to jump to it</span></div>
+  <ul class="launcher reveal" data-stagger>
+    <li><a href="#workspace" data-tab="vision" data-spot><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg><span class="tile-text"><small>01</small><b>Discretion</b><em>Keep your footprint small by default.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="vision" data-spot><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg><span class="tile-text"><small>02</small><b>Courier</b><em>Move value without announcing the route.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="vision" data-spot><svg class="icon" aria-hidden="true"><use href="#i-loop"/></svg><span class="tile-text"><small>03</small><b>Exchange</b><em>Change assets without a spotlight on you.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="vision" data-spot><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><span class="tile-text"><small>04</small><b>Sealed work</b><em>Run sensitive jobs behind closed doors.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="path" data-spot><svg class="icon" aria-hidden="true"><use href="#i-key"/></svg><span class="tile-text"><small>05</small><b>Staying power</b><em>Keys planned for the age of stronger machines.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="vision" data-spot><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="tile-text"><small>06</small><b>Evidence</b><em>Math over promises, every time.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="vision" data-spot><svg class="icon" aria-hidden="true"><use href="#i-dial"/></svg><span class="tile-text"><small>07</small><b>Control</b><em>You pick who sees what, and when.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#market" data-spot><svg class="icon" aria-hidden="true"><use href="#i-pulse"/></svg><span class="tile-text"><small>08</small><b>Signals</b><em>The busiest Solana tokens in one glance.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="facts" data-spot><svg class="icon" aria-hidden="true"><use href="#i-page"/></svg><span class="tile-text"><small>09</small><b>Clarity</b><em>Every fact sourced, or marked as pending.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="facts" data-spot><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span class="tile-text"><small>10</small><b>Channels</b><em>Links switch on once they are confirmed.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="path" data-spot><svg class="icon" aria-hidden="true"><use href="#i-steps"/></svg><span class="tile-text"><small>11</small><b>Roadmap</b><em>Four phases, from first light to full reach.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="#workspace" data-tab="token" data-spot><svg class="icon" aria-hidden="true"><use href="#i-coin"/></svg><span class="tile-text"><small>12</small><b>Token plan</b><em>Open slots, filled only with confirmed terms.</em></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>
+  </ul>
+</section>
+
+<div class="ticker reveal" aria-hidden="true" data-state="skeleton"><div class="ticker-track" id="ticker-track"></div></div>
+
+<section class="market" id="market" aria-labelledby="market-title">
+  <div class="section-head reveal">
+    <div>
+      <p class="eyebrow">LIVE BOARD</p>
+      <h2 id="market-title">The tape: ten busiest Solana tokens.</h2>
+    </div>
+    <span class="pill" id="status-pill" data-status="loading" role="status"><i class="dot"></i><span class="pill-text">Syncing</span></span>
+  </div>
+  <div class="stats reveal" data-stagger>
+    <div class="stat" data-spot><span class="stat-label">Combined volume, 24h</span><b class="stat-num" id="stat-vol">—</b></div>
+    <div class="stat" data-spot><span class="stat-label">Combined liquidity</span><b class="stat-num" id="stat-liq">—</b></div>
+    <div class="stat" data-spot><span class="stat-label">Rising on the day</span><b class="stat-num" id="stat-up">—</b></div>
+    <div class="stat" data-spot><span class="stat-label">Tokens on the board</span><b class="stat-num" id="stat-n">—</b></div>
+  </div>
+  <p class="board-note" id="board-note" role="status" hidden>The data source did not answer. Trying again with a longer pause each time.</p>
+  <div class="board reveal">
+    <div class="board-head" aria-hidden="true"><span>#</span><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span><span></span></div>
+    <ol class="rows" id="rows" aria-label="Top ten Solana tokens by 24 hour volume"></ol>
+  </div>
+  <noscript><p class="board-note">The live board needs JavaScript to run.</p></noscript>
+</section>
+
+<section class="workspace" id="workspace" aria-labelledby="workspace-title">
+  <div class="section-head reveal">
+    <div>
+      <p class="eyebrow">THE LONG VIEW</p>
+      <h2 id="workspace-title">Where Gozec is headed.</h2>
+    </div>
+  </div>
+  <div class="tabs reveal" role="tablist" aria-label="Project panels">
+    <button class="tab" role="tab" id="tab-vision" aria-controls="panel-vision" aria-selected="true" type="button">Vision</button>
+    <button class="tab" role="tab" id="tab-path" aria-controls="panel-path" aria-selected="false" tabindex="-1" type="button">Roadmap</button>
+    <button class="tab" role="tab" id="tab-token" aria-controls="panel-token" aria-selected="false" tabindex="-1" type="button">Token plan</button>
+    <button class="tab" role="tab" id="tab-facts" aria-controls="panel-facts" aria-selected="false" tabindex="-1" type="button">Facts</button>
+  </div>
+
+  <div class="panel reveal" role="tabpanel" id="panel-vision" aria-labelledby="tab-vision">
+    <div class="split">
+      <div>
+        <h3>Vision</h3>
+        <p>People should be able to use open networks without turning their lives into a public feed. Gozec exists to make quiet the normal setting, not a special mode for the few who know where to look.</p>
+      </div>
+      <div>
+        <h3>Mission</h3>
+        <p>Build tools that let anyone act within Solana with composure: payments that do not broadcast intent, work that stays sealed until the owner decides otherwise, and proof that anyone can check.</p>
+      </div>
+    </div>
+    <ul class="principles" data-stagger>
+      <li data-spot><b>Quiet first</b><span>Discretion is the starting state, never an add-on.</span></li>
+      <li data-spot><b>Open proof</b><span>Claims come with checks that strangers can run.</span></li>
+      <li data-spot><b>Plain speech</b><span>If a fact is not confirmed, the page says so.</span></li>
+    </ul>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-path" aria-labelledby="tab-path" hidden>
+    <ol class="phases">
+      <li data-spot><span class="phase-n">Phase I</span><b>First light</b><span>Claim the name, publish the brand, open the live board and keep the register honest.</span></li>
+      <li data-spot><span class="phase-n">Phase II</span><b>Frame</b><span>Publish the token plan, confirm the contract, switch on every official channel.</span></li>
+      <li data-spot><span class="phase-n">Phase III</span><b>Open doors</b><span>Ship the first discreet payment flow and the first sealed-work pilot with early users.</span></li>
+      <li data-spot><span class="phase-n">Phase IV</span><b>Full reach</b><span>Widen coverage, harden the keys for stronger machines, and let the community steer.</span></li>
+    </ol>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-token" aria-labelledby="tab-token" hidden>
+    <p class="panel-lede">Nothing below is decided in public yet. Each slot opens the moment its terms are confirmed.</p>
+    <ul class="chips" data-stagger>
+{{CHIPS}}
+    </ul>
+  </div>
+
+  <div class="panel" role="tabpanel" id="panel-facts" aria-labelledby="tab-facts" hidden>
+    <p class="panel-lede">One ledger for every outside fact. A slot with no confirmation stays closed and carries no link.</p>
+    <ul class="facts" data-stagger>
+{{FACTS}}
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-row">
+    <a class="wordmark small" href="#top" aria-label="Gozec, back to top"><span>Gozec<b>.</b></span></a>
+    <span class="foot-site">{{FOOT_SITE}}</span>
+  </div>
+  <p class="fine">Information only. Nothing here is financial advice. Token figures appear exactly as their source reports them.</p>
+</footer>
+
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.8"/></symbol>
+    <symbol id="i-loop" viewBox="0 0 24 24"><path d="M4 9h13l-3-3M20 15H7l3 3"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21M17.5 12v3M20.5 12v2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8-7.5 9.5-4.3-1.5-7.5-4.9-7.5-9.5V6L12 3Z"/><path d="m8.8 12.2 2.4 2.4 4-4.6"/></symbol>
+    <symbol id="i-dial" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m12 12 4-4"/><path d="M12 5.2v1.6M5.2 12h1.6"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.4-6 4 12L16 12h5"/></symbol>
+    <symbol id="i-page" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    <symbol id="i-steps" viewBox="0 0 24 24"><path d="M4 19h5v-5h5V9h6"/><path d="M4 19V4"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M9.5 10.2h4a1.6 1.6 0 0 1 0 3.2h-3a1.6 1.6 0 0 0 0 3.2h4"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.2A2.2 2.2 0 0 0 13.3 4H6.2A2.2 2.2 0 0 0 4 6.2v7.1a2.2 2.2 0 0 0 2.2 2.2h2.3"/></symbol>
+    <symbol id="i-tick" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  </defs>
+</svg>
+</body>
+</html>
